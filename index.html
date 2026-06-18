@@ -1,0 +1,946 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Ingressos para a Imersão Método TES com Anderson Ribeiro — 4 dias de PNL e Inteligência Financeira. Parcela em 10x ou pague no PIX com desconto." />
+  <title>Ingresso Método TES — Anderson Ribeiro</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet" />
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: 'Open Sans', sans-serif;
+      background: #0a0a0a;
+      color: #f5f5f5;
+      line-height: 1.6;
+    }
+    img { max-width: 100%; display: block; }
+    a { text-decoration: none; color: inherit; }
+
+    :root {
+      --laranja: #F97316;
+      --amarelo: #FACC15;
+      --preto:   #0a0a0a;
+      --cinza-escuro: #111111;
+      --cinza:   #1c1c1c;
+      --cinza-claro: #2a2a2a;
+      --branco:  #ffffff;
+      --texto:   #e5e5e5;
+    }
+
+    .container { max-width: 900px; margin: 0 auto; padding: 0 20px; }
+    .txt-laranja { color: var(--laranja); }
+    .txt-amarelo { color: var(--amarelo); }
+
+    .etiqueta {
+      display: inline-block;
+      background: var(--laranja);
+      color: #fff;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 700;
+      font-size: 0.72rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      padding: 6px 14px;
+      border-radius: 4px;
+      margin-bottom: 16px;
+    }
+
+    .titulo-secao {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 900;
+      font-size: clamp(1.7rem, 4vw, 2.4rem);
+      line-height: 1.2;
+      margin-bottom: 12px;
+    }
+
+    .subtitulo-secao {
+      font-size: 1.05rem;
+      color: #aaa;
+      max-width: 620px;
+      margin-bottom: 40px;
+    }
+
+    .divisor {
+      width: 60px;
+      height: 4px;
+      background: linear-gradient(90deg, var(--laranja), var(--amarelo));
+      border-radius: 2px;
+      margin: 16px 0 32px;
+    }
+
+    /* URGÊNCIA */
+    .barra-urgencia {
+      background: linear-gradient(90deg, var(--laranja), #ea580c);
+      text-align: center;
+      padding: 10px 20px;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 700;
+      font-size: 0.85rem;
+      letter-spacing: 0.05em;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    .barra-urgencia span { opacity: 0.9; font-weight: 400; }
+
+    /* HERO */
+    .hero {
+      background: linear-gradient(160deg, #0a0a0a 0%, #1a0a00 60%, #0a0a0a 100%);
+      padding: 70px 20px 60px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(ellipse at 50% 0%, rgba(249,115,22,0.18) 0%, transparent 65%);
+      pointer-events: none;
+    }
+
+    .hero-logo {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 900;
+      font-size: clamp(3rem, 10vw, 5.5rem);
+      line-height: 1;
+      letter-spacing: -0.02em;
+      background: linear-gradient(135deg, var(--laranja) 0%, var(--amarelo) 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      margin-bottom: 8px;
+    }
+
+    .hero-sub-logo {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 600;
+      font-size: clamp(0.85rem, 2vw, 1.05rem);
+      letter-spacing: 0.28em;
+      text-transform: uppercase;
+      color: #aaa;
+      margin-bottom: 32px;
+    }
+
+    .hero h1 {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 900;
+      font-size: clamp(1.8rem, 5vw, 3rem);
+      line-height: 1.15;
+      color: var(--branco);
+      max-width: 720px;
+      margin: 0 auto 20px;
+    }
+
+    .hero h1 em { font-style: normal; color: var(--amarelo); }
+
+    .hero-desc {
+      font-size: clamp(1rem, 2.5vw, 1.15rem);
+      color: #bbb;
+      max-width: 580px;
+      margin: 0 auto 40px;
+    }
+
+    .hero-selos {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-bottom: 44px;
+    }
+
+    .selo {
+      background: rgba(249,115,22,0.12);
+      border: 1px solid rgba(249,115,22,0.3);
+      border-radius: 999px;
+      padding: 7px 16px;
+      font-size: 0.82rem;
+      font-weight: 600;
+      color: var(--laranja);
+    }
+
+    .hero-ctas { display: flex; flex-direction: column; align-items: center; gap: 14px; }
+
+    /* BOTÕES */
+    .btn-pix {
+      display: inline-block;
+      background: linear-gradient(135deg, #16a34a, #15803d);
+      color: #fff;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 800;
+      font-size: 1.05rem;
+      padding: 18px 40px;
+      border-radius: 8px;
+      letter-spacing: 0.04em;
+      transition: transform 0.2s, box-shadow 0.2s;
+      box-shadow: 0 4px 24px rgba(22,163,74,0.35);
+      text-align: center;
+      width: 100%;
+      max-width: 400px;
+    }
+    .btn-pix:hover { transform: translateY(-2px); box-shadow: 0 8px 32px rgba(22,163,74,0.45); }
+    .btn-pix small { display: block; font-weight: 400; font-size: 0.78rem; opacity: 0.85; margin-top: 4px; }
+
+    .btn-cartao {
+      display: inline-block;
+      background: linear-gradient(135deg, var(--laranja), #ea580c);
+      color: #fff;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 800;
+      font-size: 1.05rem;
+      padding: 18px 40px;
+      border-radius: 8px;
+      letter-spacing: 0.04em;
+      transition: transform 0.2s, box-shadow 0.2s;
+      box-shadow: 0 4px 24px rgba(249,115,22,0.35);
+      text-align: center;
+      width: 100%;
+      max-width: 400px;
+    }
+    .btn-cartao:hover { transform: translateY(-2px); box-shadow: 0 8px 32px rgba(249,115,22,0.45); }
+    .btn-cartao small { display: block; font-weight: 400; font-size: 0.78rem; opacity: 0.85; margin-top: 4px; }
+
+    .btn-secundario {
+      display: inline-block;
+      border: 2px solid rgba(255,255,255,0.2);
+      color: #ccc;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 600;
+      font-size: 0.88rem;
+      padding: 12px 28px;
+      border-radius: 8px;
+      transition: border-color 0.2s, color 0.2s;
+      text-align: center;
+      width: 100%;
+      max-width: 400px;
+    }
+    .btn-secundario:hover { border-color: var(--laranja); color: var(--laranja); }
+
+    .aviso-vagas {
+      font-size: 0.82rem;
+      color: #ff6b35;
+      font-weight: 600;
+      letter-spacing: 0.05em;
+      margin-top: 4px;
+    }
+    .aviso-vagas::before { content: "🔥 "; }
+
+    /* ESTATÍSTICAS */
+    .stats {
+      background: var(--cinza-escuro);
+      padding: 50px 20px;
+      border-top: 1px solid #1e1e1e;
+      border-bottom: 1px solid #1e1e1e;
+    }
+    .stats-grade {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 24px;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+    @media (min-width: 600px) { .stats-grade { grid-template-columns: repeat(4, 1fr); } }
+
+    .stat-item { text-align: center; }
+    .stat-valor {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 900;
+      font-size: clamp(2rem, 5vw, 2.6rem);
+      background: linear-gradient(135deg, var(--laranja), var(--amarelo));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      line-height: 1;
+    }
+    .stat-label {
+      font-size: 0.8rem;
+      color: #777;
+      margin-top: 6px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+    }
+
+    /* SEÇÕES */
+    .secao { padding: 70px 20px; }
+    .secao-alt { background: var(--cinza-escuro); }
+
+    /* GRADE DOS DIAS */
+    .grade-dias {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 16px;
+    }
+    @media (min-width: 640px) { .grade-dias { grid-template-columns: repeat(2, 1fr); } }
+
+    .card-dia {
+      background: var(--cinza);
+      border: 1px solid #2a2a2a;
+      border-left: 4px solid var(--laranja);
+      border-radius: 8px;
+      padding: 24px;
+      transition: border-color 0.2s;
+    }
+    .card-dia:hover { border-left-color: var(--amarelo); }
+    .card-dia-num {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 900;
+      font-size: 0.72rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--laranja);
+      margin-bottom: 8px;
+    }
+    .card-dia-titulo {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 800;
+      font-size: 1.05rem;
+      margin-bottom: 8px;
+      color: #fff;
+    }
+    .card-dia-desc { font-size: 0.9rem; color: #999; line-height: 1.55; }
+
+    /* MENTOR */
+    .grade-mentor {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 40px;
+      align-items: start;
+    }
+    @media (min-width: 700px) { .grade-mentor { grid-template-columns: 1fr 2fr; } }
+
+    .mentor-foto {
+      border: 3px solid #ffffff;
+      border-radius: 12px;
+      overflow: hidden;
+      max-width: 300px;
+      box-shadow: 0 8px 40px rgba(255,255,255,0.15);
+    }
+    .mentor-foto img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .lista-credenciais { list-style: none; margin-bottom: 20px; }
+    .lista-credenciais li {
+      padding: 8px 0;
+      border-bottom: 1px solid #222;
+      font-size: 0.92rem;
+      color: #ccc;
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+    }
+    .lista-credenciais li::before {
+      content: "✓";
+      color: var(--laranja);
+      font-weight: 700;
+      flex-shrink: 0;
+      margin-top: 1px;
+    }
+
+    /* DEPOIMENTOS */
+    .grade-depoimentos {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 20px;
+    }
+    @media (min-width: 600px) { .grade-depoimentos { grid-template-columns: repeat(3, 1fr); } }
+
+    .card-depoimento {
+      background: var(--cinza);
+      border: 1px solid #252525;
+      border-radius: 10px;
+      padding: 24px;
+    }
+    .depoimento-estrelas { color: var(--amarelo); font-size: 0.9rem; margin-bottom: 12px; }
+    .depoimento-texto {
+      font-size: 0.9rem;
+      color: #bbb;
+      line-height: 1.6;
+      margin-bottom: 16px;
+      font-style: italic;
+    }
+    .depoimento-autor {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 700;
+      font-size: 0.85rem;
+      color: #eee;
+    }
+    .depoimento-cargo { font-size: 0.78rem; color: #666; margin-top: 2px; }
+
+    /* VALORES */
+    .secao-valores {
+      background: linear-gradient(160deg, #0f0700 0%, #0a0a0a 100%);
+      padding: 70px 20px;
+      text-align: center;
+      position: relative;
+    }
+    .secao-valores::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(ellipse at 50% 0%, rgba(249,115,22,0.12) 0%, transparent 60%);
+      pointer-events: none;
+    }
+
+    .grade-valores {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 20px;
+      max-width: 700px;
+      margin: 0 auto 40px;
+    }
+    @media (min-width: 600px) { .grade-valores { grid-template-columns: repeat(2, 1fr); } }
+
+    .card-valor {
+      background: var(--cinza);
+      border: 1px solid #2a2a2a;
+      border-radius: 12px;
+      padding: 32px 28px;
+      text-align: center;
+    }
+    .card-valor.destaque {
+      border: 2px solid var(--laranja);
+      background: linear-gradient(160deg, #1a0800, #111);
+      position: relative;
+    }
+    .etiqueta-destaque {
+      position: absolute;
+      top: -14px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: var(--laranja);
+      color: #fff;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 700;
+      font-size: 0.7rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      padding: 5px 16px;
+      border-radius: 999px;
+      white-space: nowrap;
+    }
+
+    .tipo-pagamento {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 700;
+      font-size: 0.8rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: #888;
+      margin-bottom: 12px;
+    }
+
+    .valor-principal {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 900;
+      font-size: clamp(2.2rem, 6vw, 2.8rem);
+      color: #fff;
+      line-height: 1;
+      margin-bottom: 4px;
+    }
+    .valor-principal sup { font-size: 1.2rem; vertical-align: super; font-weight: 600; }
+
+    .detalhe-valor { font-size: 0.82rem; color: #777; margin-bottom: 24px; }
+
+    .linha-original {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      margin-bottom: 8px;
+    }
+    .valor-original {
+      font-size: 0.88rem;
+      color: #555;
+      text-decoration: line-through;
+    }
+    .economia {
+      background: rgba(34,197,94,0.15);
+      border: 1px solid rgba(34,197,94,0.3);
+      color: #22c55e;
+      font-size: 0.75rem;
+      font-weight: 700;
+      padding: 3px 10px;
+      border-radius: 999px;
+    }
+
+    .lista-incluso { list-style: none; text-align: left; margin-bottom: 24px; }
+    .lista-incluso li {
+      padding: 7px 0;
+      font-size: 0.88rem;
+      color: #bbb;
+      border-bottom: 1px solid #1e1e1e;
+      display: flex;
+      align-items: flex-start;
+      gap: 8px;
+    }
+    .lista-incluso li::before { content: "✓"; color: #22c55e; font-weight: 700; flex-shrink: 0; }
+
+    /* FAQ */
+    .lista-faq { max-width: 700px; margin: 0 auto; }
+    .item-faq { border-bottom: 1px solid #1e1e1e; padding: 20px 0; }
+    .pergunta-faq {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 700;
+      font-size: 0.95rem;
+      color: #eee;
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+      user-select: none;
+    }
+    .pergunta-faq::after {
+      content: "+";
+      font-size: 1.4rem;
+      color: var(--laranja);
+      flex-shrink: 0;
+      transition: transform 0.2s;
+    }
+    .item-faq.aberto .pergunta-faq::after { transform: rotate(45deg); }
+    .resposta-faq {
+      font-size: 0.9rem;
+      color: #999;
+      line-height: 1.65;
+      margin-top: 12px;
+      display: none;
+    }
+    .item-faq.aberto .resposta-faq { display: block; }
+
+    /* CTA FINAL */
+    .cta-encerramento {
+      background: linear-gradient(135deg, #1a0800, #0a0a0a);
+      padding: 70px 20px;
+      text-align: center;
+      border-top: 1px solid #1e1e1e;
+    }
+    .cta-encerramento h2 {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 900;
+      font-size: clamp(1.8rem, 4.5vw, 2.6rem);
+      line-height: 1.2;
+      margin-bottom: 16px;
+    }
+    .cta-encerramento p { color: #999; max-width: 520px; margin: 0 auto 40px; }
+    .grupo-cta { display: flex; flex-direction: column; align-items: center; gap: 16px; }
+
+    /* FOOTER */
+    footer {
+      background: #060606;
+      padding: 30px 20px;
+      text-align: center;
+      font-size: 0.78rem;
+      color: #444;
+      border-top: 1px solid #111;
+      line-height: 1.8;
+    }
+    footer a { color: #666; }
+    footer a:hover { color: var(--laranja); }
+
+    /* BARRA FLUTUANTE MOBILE */
+    .barra-mobile {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: #0f0f0f;
+      border-top: 1px solid #2a2a2a;
+      padding: 12px 16px;
+      display: flex;
+      gap: 10px;
+      z-index: 200;
+    }
+    @media (min-width: 768px) { .barra-mobile { display: none; } }
+    .barra-mobile a { flex: 1; padding: 14px 8px; font-size: 0.82rem; border-radius: 7px; }
+
+    @media (max-width: 767px) { .cta-encerramento { padding-bottom: 100px; } }
+  </style>
+</head>
+<body>
+
+  <!-- BARRA DE URGÊNCIA -->
+  <div class="barra-urgencia">
+    🔥 ÚLTIMAS VAGAS — <span>Apenas 30 ingressos disponíveis neste lote especial</span>
+  </div>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-logo">TES</div>
+      <div class="hero-sub-logo">Método TES — Anderson Ribeiro</div>
+      <div class="etiqueta">Lote Especial · Vagas Limitadas</div>
+      <h1>
+        4 dias para <em>destravar</em> sua mente<br />e construir uma vida de resultados reais
+      </h1>
+      <p class="hero-desc">
+        A imersão presencial de PNL e Inteligência Financeira que já transformou mais de
+        200.000 vidas no Brasil. Agora com condição exclusiva de parceiro.
+      </p>
+      <div class="hero-selos">
+        <div class="selo">4 Dias Presenciais</div>
+        <div class="selo">+50 Horas de Imersão</div>
+        <div class="selo">PNL + Inteligência Financeira</div>
+        <div class="selo">NPS 93</div>
+        <div class="selo">Curitiba · ExpoTrade Pinhais</div>
+      </div>
+      <div class="hero-ctas">
+        <a href="https://payment-link-v3.ton.com.br/pl_ja3DErkzgplJL9cO6uWkG2Ry0BoeAM6X"
+           class="btn-pix" target="_blank" rel="noopener">
+          GARANTIR MEU INGRESSO — PIX R$ 990
+          <small>Pagamento à vista com desconto • Acesso confirmado</small>
+        </a>
+        <a href="https://payment-link-v3.ton.com.br/pl_MVp7v9mk4GE81evHJF0L86yaWRzOe1bq"
+           class="btn-cartao" target="_blank" rel="noopener">
+          PARCELAR EM 10X NO CARTÃO
+          <small>10x de R$ 109 sem entrada</small>
+        </a>
+        <a href="#sobre" class="btn-secundario">Quero entender mais antes de decidir</a>
+        <p class="aviso-vagas">Apenas 30 ingressos disponíveis neste lote</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ESTATÍSTICAS -->
+  <section class="stats">
+    <div class="container">
+      <div class="stats-grade">
+        <div class="stat-item">
+          <div class="stat-valor">200k+</div>
+          <div class="stat-label">Vidas treinadas</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-valor">5.000</div>
+          <div class="stat-label">Pessoas por edição</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-valor">NPS 93</div>
+          <div class="stat-label">Satisfação dos alunos</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-valor">+50h</div>
+          <div class="stat-label">De imersão ao vivo</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SOBRE O EVENTO -->
+  <section class="secao" id="sobre">
+    <div class="container">
+      <div class="etiqueta">O Evento</div>
+      <h2 class="titulo-secao">O que você vai viver nesses <em class="txt-laranja">4 dias</em></h2>
+      <div class="divisor"></div>
+      <p class="subtitulo-secao">
+        Cada dia foi estruturado para gerar uma transformação específica —
+        da mente ao bolso, dos relacionamentos ao propósito.
+      </p>
+      <div class="grade-dias">
+        <div class="card-dia">
+          <div class="card-dia-num">Dia 1</div>
+          <div class="card-dia-titulo">Quebra de Limitações</div>
+          <div class="card-dia-desc">
+            Identifique e elimine as crenças que bloqueiam seu avanço. Encerramento com o
+            <strong>Firewalking</strong> — experiência de alto impacto que simboliza a superação
+            dos seus próprios limites.
+          </div>
+        </div>
+        <div class="card-dia">
+          <div class="card-dia-num">Dia 2</div>
+          <div class="card-dia-titulo">PNL Avançada — Padrão de Sucesso</div>
+          <div class="card-dia-desc">
+            Ferramentas de Programação Neurolinguística para reprogramar seu sistema de crenças
+            no nível inconsciente, instalando novos padrões de comportamento e tomada de decisão.
+          </div>
+        </div>
+        <div class="card-dia">
+          <div class="card-dia-num">Dia 3</div>
+          <div class="card-dia-titulo">Estruturação de Resultados</div>
+          <div class="card-dia-desc">
+            Aplicação prática das ferramentas de PNL em todas as áreas da vida: saúde, família,
+            relacionamentos, carreira e espiritualidade. Do aprendizado para a ação concreta.
+          </div>
+        </div>
+        <div class="card-dia" style="border-left-color: var(--amarelo);">
+          <div class="card-dia-num" style="color: var(--amarelo);">Dia 4 · Exclusivo</div>
+          <div class="card-dia-titulo">Negócios, Finanças e Rede</div>
+          <div class="card-dia-desc">
+            O único evento no Brasil que forma <strong>grupos de negócios dentro da própria imersão</strong>.
+            Inteligência financeira, blindagem patrimonial e parcerias reais com quem está na mesma
+            jornada que você.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MENTOR -->
+  <section class="secao secao-alt" id="mentor">
+    <div class="container">
+      <div class="etiqueta">O Mentor</div>
+      <h2 class="titulo-secao">Anderson Ribeiro</h2>
+      <div class="divisor"></div>
+      <div class="grade-mentor">
+        <div>
+          <div class="mentor-foto">
+            <img src="anderson-ribeiro.jpeg" alt="Anderson Ribeiro — Mentor Método TES" />
+          </div>
+        </div>
+        <div>
+          <p style="color:#bbb; margin-bottom:20px; line-height:1.7;">
+            Anderson Ribeiro é fundador do Instituto INBRATA e referência em PNL e Inteligência
+            Financeira no Brasil. Formado diretamente por <strong style="color:#fff">Tony Robbins</strong>
+            nos Estados Unidos e por <strong style="color:#fff">Jeffrey Zeig</strong>, discípulo de Milton Erickson,
+            ele acumula duas décadas treinando pessoas e empresas.
+          </p>
+          <ul class="lista-credenciais">
+            <li>Master &amp; Trainer de PNL — nível máximo de certificação</li>
+            <li>Formado diretamente por Tony Robbins (EUA)</li>
+            <li>Mestrando em Psicologia | Terapeuta Comportamental</li>
+            <li>MBA em Gestão de Negócios e Finanças</li>
+            <li>Autor do livro "Chaves para o Primeiro Milhão"</li>
+            <li>+200.000 pessoas treinadas presencialmente</li>
+            <li>CEO do Grupo ALR Company e Instituto INBRATA</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DEPOIMENTOS -->
+  <section class="secao" id="depoimentos">
+    <div class="container">
+      <div class="etiqueta">Quem já participou</div>
+      <h2 class="titulo-secao">O que os participantes dizem</h2>
+      <div class="divisor"></div>
+      <div class="grade-depoimentos">
+        <div class="card-depoimento">
+          <div class="depoimento-estrelas">★★★★★</div>
+          <p class="depoimento-texto">
+            "O Método TES foi um divisor de águas. Saí de lá com uma clareza que eu nunca
+            tinha tido — sobre quem eu sou, o que quero e como chegar lá."
+          </p>
+          <div class="depoimento-autor">Felipe S.</div>
+          <div class="depoimento-cargo">Participante — Edição 2024</div>
+        </div>
+        <div class="card-depoimento">
+          <div class="depoimento-estrelas">★★★★★</div>
+          <p class="depoimento-texto">
+            "Fui como empreendedora buscando estratégia. Saí transformada como pessoa.
+            O Dia 4 foi incrível — fechei duas parcerias ainda dentro do evento."
+          </p>
+          <div class="depoimento-autor">Nagyla M.</div>
+          <div class="depoimento-cargo">Empreendedora — Participante 2024</div>
+        </div>
+        <div class="card-depoimento">
+          <div class="depoimento-estrelas">★★★★★</div>
+          <p class="depoimento-texto">
+            "Cheguei com medo e saí com coragem. O firewalking foi simbólico — mas o que
+            ficou foi a clareza mental e a rede que construí nesses 4 dias."
+          </p>
+          <div class="depoimento-autor">Sarah R.</div>
+          <div class="depoimento-cargo">Participante — Edição 2024</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- VALORES -->
+  <section class="secao-valores" id="valores">
+    <div class="container">
+      <div class="etiqueta">Condição Especial de Parceiro</div>
+      <h2 class="titulo-secao" style="color:#fff;">Garanta seu ingresso<br/><em class="txt-amarelo">neste lote especial</em></h2>
+      <div class="divisor" style="margin:16px auto 32px;"></div>
+      <p style="color:#888; max-width:500px; margin:0 auto 40px;">
+        São apenas 30 ingressos neste lote. Quando acabar, o valor sobe ou as vagas
+        ficam indisponíveis.
+      </p>
+
+      <div class="grade-valores">
+        <!-- PIX -->
+        <div class="card-valor destaque">
+          <div class="etiqueta-destaque">✦ Melhor opção</div>
+          <div class="tipo-pagamento">PIX — Pagamento Único</div>
+          <div class="linha-original">
+            <span class="valor-original">De R$ 6.499</span>
+            <span class="economia">-85%</span>
+          </div>
+          <div class="valor-principal"><sup>R$</sup> 990</div>
+          <div class="detalhe-valor">Pagamento único · Confirmação em minutos</div>
+          <ul class="lista-incluso">
+            <li>4 dias de imersão presencial</li>
+            <li>+50 horas de conteúdo ao vivo</li>
+            <li>Firewalking — Dia 1</li>
+            <li>Grupos de negócios — Dia 4</li>
+            <li>Certificado de participação</li>
+          </ul>
+          <a href="https://payment-link-v3.ton.com.br/pl_ja3DErkzgplJL9cO6uWkG2Ry0BoeAM6X"
+             class="btn-pix" target="_blank" rel="noopener">
+            PAGAR COM PIX — R$ 990
+            <small>Clique e pague agora</small>
+          </a>
+        </div>
+
+        <!-- CARTÃO -->
+        <div class="card-valor">
+          <div class="tipo-pagamento">Cartão de Crédito</div>
+          <div class="linha-original">
+            <span class="valor-original">De R$ 6.499</span>
+          </div>
+          <div class="valor-principal" style="font-size:1.6rem;">10x <sup>R$</sup>109</div>
+          <div class="detalhe-valor">Total: R$ 1.090,00 · Sem entrada</div>
+          <ul class="lista-incluso">
+            <li>4 dias de imersão presencial</li>
+            <li>+50 horas de conteúdo ao vivo</li>
+            <li>Firewalking — Dia 1</li>
+            <li>Grupos de negócios — Dia 4</li>
+            <li>Certificado de participação</li>
+          </ul>
+          <a href="https://payment-link-v3.ton.com.br/pl_MVp7v9mk4GE81evHJF0L86yaWRzOe1bq"
+             class="btn-cartao" target="_blank" rel="noopener">
+            PARCELAR EM 10X NO CARTÃO
+            <small>Clique para acessar o pagamento</small>
+          </a>
+        </div>
+      </div>
+
+      <p class="aviso-vagas" style="font-size:0.9rem; margin-top:8px;">
+        Apenas 30 ingressos disponíveis neste lote de parceiro
+      </p>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="secao secao-alt" id="faq">
+    <div class="container">
+      <div class="etiqueta">Dúvidas</div>
+      <h2 class="titulo-secao" style="text-align:center;">Perguntas frequentes</h2>
+      <div class="divisor" style="margin:16px auto 40px;"></div>
+      <div class="lista-faq">
+
+        <div class="item-faq">
+          <div class="pergunta-faq" onclick="abrirFaq(this)">Onde acontece o evento?</div>
+          <div class="resposta-faq">
+            O Método TES acontece em Curitiba, no ExpoTrade Pinhais — um dos maiores centros
+            de eventos do Paraná. Informações completas sobre local e datas são enviadas
+            após a confirmação do ingresso.
+          </div>
+        </div>
+
+        <div class="item-faq">
+          <div class="pergunta-faq" onclick="abrirFaq(this)">Alimentação e hospedagem estão incluídas?</div>
+          <div class="resposta-faq">
+            Alimentação e hospedagem não estão inclusas. O evento oferece coffee break no local
+            e há hotéis parceiros próximos. Entre em contato pelo Instagram
+            <strong>@ingressometodotes</strong> para informações sobre opções de hospedagem.
+          </div>
+        </div>
+
+        <div class="item-faq">
+          <div class="pergunta-faq" onclick="abrirFaq(this)">Posso participar sem experiência com PNL?</div>
+          <div class="resposta-faq">
+            Sim. O Método TES é estruturado para iniciantes e para quem já tem contato com
+            desenvolvimento pessoal. O conteúdo parte do básico e evolui para aplicações
+            avançadas ao longo dos 4 dias.
+          </div>
+        </div>
+
+        <div class="item-faq">
+          <div class="pergunta-faq" onclick="abrirFaq(this)">Como recebo meu ingresso após o pagamento?</div>
+          <div class="resposta-faq">
+            Após a confirmação do pagamento, você recebe as informações de acesso por e-mail
+            e/ou WhatsApp. Em caso de dúvidas, entre em contato pelo Instagram
+            <strong>@ingressometodotes</strong>.
+          </div>
+        </div>
+
+        <div class="item-faq">
+          <div class="pergunta-faq" onclick="abrirFaq(this)">Existe alguma restrição para participar?</div>
+          <div class="resposta-faq">
+            O evento é indicado para maiores de 18 anos. Pessoas com condições médicas específicas
+            devem consultar seu médico antes de participar, pois o evento envolve atividades de
+            alta estimulação emocional.
+          </div>
+        </div>
+
+        <div class="item-faq">
+          <div class="pergunta-faq" onclick="abrirFaq(this)">Tenho dúvidas. Como falo com vocês?</div>
+          <div class="resposta-faq">
+            Entre em contato pelo Instagram <strong>@ingressometodotes</strong> via Direct.
+            Respondemos todas as mensagens e podemos ajudar a avaliar se o evento é a escolha
+            certa para o seu momento.
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA FINAL -->
+  <section class="cta-encerramento">
+    <div class="container">
+      <div class="etiqueta">Decisão</div>
+      <h2>Seu próximo passo começa <em class="txt-amarelo">aqui</em></h2>
+      <p>
+        30 ingressos. Lote especial. Quando acabar, acabou.
+        Se você chegou até aqui, provavelmente já sabe que é para você.
+      </p>
+      <div class="grupo-cta">
+        <a href="https://payment-link-v3.ton.com.br/pl_ja3DErkzgplJL9cO6uWkG2Ry0BoeAM6X"
+           class="btn-pix" target="_blank" rel="noopener">
+          GARANTIR COM PIX — R$ 990
+          <small>Melhor valor · Confirmação imediata</small>
+        </a>
+        <a href="https://payment-link-v3.ton.com.br/pl_MVp7v9mk4GE81evHJF0L86yaWRzOe1bq"
+           class="btn-cartao" target="_blank" rel="noopener">
+          PARCELAR EM 10X — R$ 109/mês
+          <small>Sem entrada no cartão</small>
+        </a>
+        <a href="https://instagram.com/ingressometodotes" class="btn-secundario"
+           target="_blank" rel="noopener">
+          Falar com atendente no Instagram →
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <p>
+        Ingressos comercializados por parceiro oficial do Método TES.<br />
+        O evento é realizado pelo Instituto INBRATA — Anderson Luiz Ribeiro.<br />
+        Dúvidas: <a href="https://instagram.com/ingressometodotes" target="_blank">@ingressometodotes</a>
+      </p>
+      <p style="margin-top:12px;">
+        Este site não armazena dados pessoais. Pagamentos processados com segurança pela plataforma TON.
+      </p>
+    </div>
+  </footer>
+
+  <!-- BARRA FLUTUANTE MOBILE -->
+  <div class="barra-mobile">
+    <a href="https://payment-link-v3.ton.com.br/pl_ja3DErkzgplJL9cO6uWkG2Ry0BoeAM6X"
+       class="btn-pix" target="_blank" rel="noopener">PIX R$ 990</a>
+    <a href="https://payment-link-v3.ton.com.br/pl_MVp7v9mk4GE81evHJF0L86yaWRzOe1bq"
+       class="btn-cartao" target="_blank" rel="noopener">10x R$ 109</a>
+  </div>
+
+  <script>
+    function abrirFaq(el) {
+      el.parentElement.classList.toggle('aberto');
+    }
+  </script>
+
+</body>
+</html>
