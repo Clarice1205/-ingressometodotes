@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Ingressos para a Imersão Método TES com Anderson Ribeiro — 4 dias de PNL e Inteligência Financeira. Parcele em 10x no cartão. Lote especial de parceiro." />
+  <meta name="description" content="Ingressos para a Imersão Método TES com Anderson Ribeiro — 4 dias de PNL e Inteligência Financeira. R$ 500 à vista ou 5x R$ 100. Lote especial de parceiro." />
   <title>Ingresso Método TES — Anderson Ribeiro</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -25,6 +25,7 @@
     :root {
       --laranja: #F97316;
       --amarelo: #FACC15;
+      --verde:   #16a34a;
       --preto:   #0a0a0a;
       --cinza-escuro: #111111;
       --cinza:   #1c1c1c;
@@ -36,6 +37,7 @@
     .container { max-width: 900px; margin: 0 auto; padding: 0 20px; }
     .txt-laranja { color: var(--laranja); }
     .txt-amarelo { color: var(--amarelo); }
+    .txt-verde   { color: #22c55e; }
 
     .etiqueta {
       display: inline-block;
@@ -231,6 +233,52 @@
     }
     .aviso-vagas::before { content: "🔥 "; }
 
+    /* BANNER PREÇO HERO */
+    .banner-preco {
+      background: linear-gradient(135deg, rgba(22,163,74,0.15), rgba(249,115,22,0.1));
+      border: 1px solid rgba(22,163,74,0.3);
+      border-radius: 12px;
+      padding: 20px 28px;
+      margin: 0 auto 32px;
+      max-width: 420px;
+      text-align: center;
+    }
+    .banner-preco .de {
+      font-size: 0.85rem;
+      color: #555;
+      text-decoration: line-through;
+      margin-bottom: 4px;
+    }
+    .banner-preco .por {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 900;
+      font-size: clamp(2rem, 6vw, 2.6rem);
+      color: #22c55e;
+      line-height: 1;
+    }
+    .banner-preco .ou {
+      color: #777;
+      font-size: 0.85rem;
+      margin: 6px 0;
+    }
+    .banner-preco .parcela {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 700;
+      font-size: 1.1rem;
+      color: var(--laranja);
+    }
+    .banner-preco .economia-badge {
+      display: inline-block;
+      background: rgba(34,197,94,0.15);
+      border: 1px solid rgba(34,197,94,0.35);
+      color: #22c55e;
+      font-size: 0.75rem;
+      font-weight: 700;
+      padding: 4px 12px;
+      border-radius: 999px;
+      margin-top: 10px;
+    }
+
     /* ESTATÍSTICAS */
     .stats {
       background: var(--cinza-escuro);
@@ -396,7 +444,7 @@
       display: grid;
       grid-template-columns: 1fr;
       gap: 20px;
-      max-width: 700px;
+      max-width: 760px;
       margin: 0 auto 40px;
     }
     @media (min-width: 600px) { .grade-valores { grid-template-columns: repeat(2, 1fr); } }
@@ -407,18 +455,22 @@
       border-radius: 12px;
       padding: 32px 28px;
       text-align: center;
-    }
-    .card-valor.destaque {
-      border: 2px solid var(--laranja);
-      background: linear-gradient(160deg, #1a0800, #111);
       position: relative;
     }
+    .card-valor.pix-destaque {
+      border: 2px solid #22c55e;
+      background: linear-gradient(160deg, #021a08, #111);
+    }
+    .card-valor.cartao-opcao {
+      border: 2px solid var(--laranja);
+      background: linear-gradient(160deg, #1a0800, #111);
+    }
+
     .etiqueta-destaque {
       position: absolute;
       top: -14px;
       left: 50%;
       transform: translateX(-50%);
-      background: var(--laranja);
       color: #fff;
       font-family: 'Montserrat', sans-serif;
       font-weight: 700;
@@ -429,6 +481,8 @@
       border-radius: 999px;
       white-space: nowrap;
     }
+    .etiqueta-destaque.verde { background: #16a34a; }
+    .etiqueta-destaque.laranja { background: var(--laranja); }
 
     .tipo-pagamento {
       font-family: 'Montserrat', sans-serif;
@@ -444,11 +498,12 @@
       font-family: 'Montserrat', sans-serif;
       font-weight: 900;
       font-size: clamp(2.2rem, 6vw, 2.8rem);
-      color: #fff;
       line-height: 1;
       margin-bottom: 4px;
     }
     .valor-principal sup { font-size: 1.2rem; vertical-align: super; font-weight: 600; }
+    .valor-principal.verde { color: #22c55e; }
+    .valor-principal.laranja { color: var(--laranja); }
 
     .detalhe-valor { font-size: 0.82rem; color: #777; margin-bottom: 24px; }
 
@@ -556,22 +611,50 @@
       right: 0;
       background: #0f0f0f;
       border-top: 1px solid #2a2a2a;
-      padding: 12px 16px;
+      padding: 10px 12px;
       display: flex;
-      gap: 10px;
+      gap: 8px;
       z-index: 200;
     }
     @media (min-width: 768px) { .barra-mobile { display: none; } }
-    .barra-mobile a { flex: 1; padding: 14px 8px; font-size: 0.82rem; border-radius: 7px; }
+    .barra-mobile a {
+      flex: 1;
+      padding: 12px 6px;
+      font-size: 0.78rem;
+      border-radius: 7px;
+      text-align: center;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 800;
+      color: #fff;
+    }
+    .barra-mobile .mob-pix { background: linear-gradient(135deg, #16a34a, #15803d); }
+    .barra-mobile .mob-cartao { background: linear-gradient(135deg, var(--laranja), #ea580c); }
 
     @media (max-width: 767px) { .cta-encerramento { padding-bottom: 100px; } }
+
+    /* SEPARADOR OU */
+    .ou-separador {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      color: #444;
+      font-size: 0.82rem;
+      margin: 4px 0;
+    }
+    .ou-separador::before,
+    .ou-separador::after {
+      content: '';
+      flex: 1;
+      height: 1px;
+      background: #222;
+    }
   </style>
 </head>
 <body>
 
   <!-- BARRA DE URGÊNCIA -->
   <div class="barra-urgencia">
-    🔥 ÚLTIMAS VAGAS — <span>Apenas 30 ingressos disponíveis neste lote especial</span>
+    🔥 LOTE ESPECIAL — <span>R$ 500 à vista ou 5x R$ 100 · Apenas 30 ingressos</span>
   </div>
 
   <!-- HERO -->
@@ -594,11 +677,26 @@
         <div class="selo">NPS 93</div>
         <div class="selo">Curitiba · ExpoTrade Pinhais</div>
       </div>
+
+      <!-- BANNER PREÇO -->
+      <div class="banner-preco">
+        <div class="de">De R$ 1.090,00</div>
+        <div class="por"><sup style="font-size:1.1rem;font-weight:700;">R$</sup> 500<span style="font-size:1rem;color:#16a34a;">,00</span></div>
+        <div class="ou">— ou —</div>
+        <div class="parcela">5x de R$ 100,00 no cartão</div>
+        <div class="economia-badge">🎉 Economize R$ 590 neste lote</div>
+      </div>
+
       <div class="hero-ctas">
-        <a href="https://payment-link-v3.ton.com.br/pl_MVp7v9mk4GE81evHJF0L86yaWRzOe1bq"
+        <a href="https://wa.me/5547988643952?text=Ol%C3%A1!+Quero+garantir+meu+ingresso+do+M%C3%A9todo+TES+por+R%24+500+no+PIX."
+           class="btn-pix" target="_blank" rel="noopener">
+          PAGAR R$ 500 NO PIX
+          <small>Clique para falar no WhatsApp e enviar o PIX</small>
+        </a>
+        <a href="https://payment-link-v3.ton.com.br/pl_KG7Pg9ydq5JelBslwsL8p2rk0nlLzZjB"
            class="btn-cartao" target="_blank" rel="noopener">
-          GARANTIR MEU INGRESSO — 10X R$ 109
-          <small>Sem entrada · Parcele no cartão de crédito</small>
+          PARCELAR EM 5X R$ 100 NO CARTÃO
+          <small>Sem entrada · Clique para acessar o pagamento</small>
         </a>
         <a href="#sobre" class="btn-secundario">Quero entender mais antes de decidir</a>
         <p class="aviso-vagas">Apenas 30 ingressos disponíveis neste lote</p>
@@ -754,23 +852,24 @@
   <section class="secao-valores" id="valores">
     <div class="container">
       <div class="etiqueta">Condição Especial de Parceiro</div>
-      <h2 class="titulo-secao" style="color:#fff;">Garanta seu ingresso<br/><em class="txt-amarelo">neste lote especial</em></h2>
+      <h2 class="titulo-secao" style="color:#fff;">Escolha como prefere<br/><em class="txt-amarelo">garantir seu ingresso</em></h2>
       <div class="divisor" style="margin:16px auto 32px;"></div>
-      <p style="color:#888; max-width:500px; margin:0 auto 40px;">
-        São apenas 30 ingressos neste lote. Quando acabar, o valor sobe ou as vagas
-        ficam indisponíveis.
+      <p style="color:#888; max-width:500px; margin:0 auto 48px;">
+        São apenas 30 ingressos neste lote especial. Quando acabar, o valor sobe para R$ 1.090.
       </p>
 
-      <div class="grade-valores" style="grid-template-columns: 1fr; max-width: 400px;">
-        <!-- CARTÃO -->
-        <div class="card-valor destaque">
-          <div class="etiqueta-destaque">✦ Condição especial de parceiro</div>
-          <div class="tipo-pagamento">Cartão de Crédito</div>
+      <div class="grade-valores">
+
+        <!-- PIX -->
+        <div class="card-valor pix-destaque">
+          <div class="etiqueta-destaque verde">✦ Melhor preço — PIX</div>
+          <div class="tipo-pagamento" style="margin-top:8px;">À Vista · PIX</div>
           <div class="linha-original">
-            <span class="valor-original">De R$ 6.499</span>
+            <span class="valor-original">De R$ 1.090</span>
+            <span class="economia">Economize R$ 590</span>
           </div>
-          <div class="valor-principal" style="font-size:1.6rem;">10x <sup>R$</sup>109</div>
-          <div class="detalhe-valor">Total: R$ 1.090,00 · Sem entrada</div>
+          <div class="valor-principal verde"><sup>R$</sup>500</div>
+          <div class="detalhe-valor">Pagamento único via PIX · Confirmação imediata</div>
           <ul class="lista-incluso">
             <li>4 dias de imersão presencial</li>
             <li>+50 horas de conteúdo ao vivo</li>
@@ -778,12 +877,36 @@
             <li>Grupos de negócios — Dia 4</li>
             <li>Certificado de participação</li>
           </ul>
-          <a href="https://payment-link-v3.ton.com.br/pl_MVp7v9mk4GE81evHJF0L86yaWRzOe1bq"
+          <a href="https://wa.me/5547988643952?text=Ol%C3%A1!+Quero+garantir+meu+ingresso+do+M%C3%A9todo+TES+por+R%24+500+no+PIX."
+             class="btn-pix" target="_blank" rel="noopener">
+            PAGAR R$ 500 NO PIX
+            <small>Clique para falar no WhatsApp</small>
+          </a>
+        </div>
+
+        <!-- CARTÃO -->
+        <div class="card-valor cartao-opcao">
+          <div class="etiqueta-destaque laranja">Parcelado sem entrada</div>
+          <div class="tipo-pagamento" style="margin-top:8px;">Cartão de Crédito</div>
+          <div class="linha-original">
+            <span class="valor-original">De 10x R$ 109</span>
+          </div>
+          <div class="valor-principal laranja" style="font-size:1.5rem;">5x <sup>R$</sup>100</div>
+          <div class="detalhe-valor">Total: R$ 500,00 · Sem entrada · Sem juros</div>
+          <ul class="lista-incluso">
+            <li>4 dias de imersão presencial</li>
+            <li>+50 horas de conteúdo ao vivo</li>
+            <li>Firewalking — Dia 1</li>
+            <li>Grupos de negócios — Dia 4</li>
+            <li>Certificado de participação</li>
+          </ul>
+          <a href="https://payment-link-v3.ton.com.br/pl_KG7Pg9ydq5JelBslwsL8p2rk0nlLzZjB"
              class="btn-cartao" target="_blank" rel="noopener">
-            PARCELAR EM 10X NO CARTÃO
+            PARCELAR EM 5X R$ 100
             <small>Clique para acessar o pagamento</small>
           </a>
         </div>
+
       </div>
 
       <p class="aviso-vagas" style="font-size:0.9rem; margin-top:8px;">
@@ -804,8 +927,16 @@
           <div class="pergunta-faq" onclick="abrirFaq(this)">Onde acontece o evento?</div>
           <div class="resposta-faq">
             O Método TES acontece em Curitiba, no ExpoTrade Pinhais — um dos maiores centros
-            de eventos do Paraná. Informações completas sobre local e datas são enviadas
-            após a confirmação do ingresso.
+            de eventos do Paraná, nos dias 10, 11, 12 e 13 de dezembro de 2026.
+          </div>
+        </div>
+
+        <div class="item-faq">
+          <div class="pergunta-faq" onclick="abrirFaq(this)">Qual a diferença entre pagar no PIX ou no cartão?</div>
+          <div class="resposta-faq">
+            Ambas as opções têm o mesmo valor total de R$ 500. No PIX você paga tudo de uma vez
+            e a confirmação é imediata. No cartão você parcela em 5x de R$ 100 sem entrada e sem juros,
+            com o pagamento processado pela plataforma TON.
           </div>
         </div>
 
@@ -830,8 +961,8 @@
         <div class="item-faq">
           <div class="pergunta-faq" onclick="abrirFaq(this)">Como recebo meu ingresso após o pagamento?</div>
           <div class="resposta-faq">
-            Após a confirmação do pagamento, você recebe as informações de acesso por e-mail
-            e/ou WhatsApp. Em caso de dúvidas, entre em contato pelo Instagram
+            Após a confirmação do pagamento (PIX ou cartão), você recebe as informações de acesso
+            por e-mail e/ou WhatsApp. Em caso de dúvidas, entre em contato pelo Instagram
             <strong>@ingressometodotes</strong>.
           </div>
         </div>
@@ -848,7 +979,8 @@
         <div class="item-faq">
           <div class="pergunta-faq" onclick="abrirFaq(this)">Tenho dúvidas. Como falo com vocês?</div>
           <div class="resposta-faq">
-            Entre em contato pelo Instagram <strong>@ingressometodotes</strong> via Direct.
+            Entre em contato pelo Instagram <strong>@ingressometodotes</strong> via Direct
+            ou pelo WhatsApp <strong>(47) 98864-3952</strong>.
             Respondemos todas as mensagens e podemos ajudar a avaliar se o evento é a escolha
             certa para o seu momento.
           </div>
@@ -864,14 +996,19 @@
       <div class="etiqueta">Decisão</div>
       <h2>Seu próximo passo começa <em class="txt-amarelo">aqui</em></h2>
       <p>
-        30 ingressos. Lote especial. Quando acabar, acabou.
+        30 ingressos. Lote especial por R$ 500. Quando acabar, o valor volta para R$ 1.090.
         Se você chegou até aqui, provavelmente já sabe que é para você.
       </p>
       <div class="grupo-cta">
-        <a href="https://payment-link-v3.ton.com.br/pl_MVp7v9mk4GE81evHJF0L86yaWRzOe1bq"
+        <a href="https://wa.me/5547988643952?text=Ol%C3%A1!+Quero+garantir+meu+ingresso+do+M%C3%A9todo+TES+por+R%24+500+no+PIX."
+           class="btn-pix" target="_blank" rel="noopener">
+          PAGAR R$ 500 NO PIX
+          <small>Falar no WhatsApp agora</small>
+        </a>
+        <a href="https://payment-link-v3.ton.com.br/pl_KG7Pg9ydq5JelBslwsL8p2rk0nlLzZjB"
            class="btn-cartao" target="_blank" rel="noopener">
-          GARANTIR MEU INGRESSO — 10X R$ 109
-          <small>Sem entrada · Parcele no cartão de crédito</small>
+          PARCELAR EM 5X R$ 100 NO CARTÃO
+          <small>Acesse o link de pagamento</small>
         </a>
         <a href="https://instagram.com/ingressometodotes" class="btn-secundario"
            target="_blank" rel="noopener">
@@ -888,17 +1025,20 @@
         Ingressos comercializados por parceiro oficial do Método TES.<br />
         O evento é realizado pelo Instituto INBRATA — Anderson Luiz Ribeiro.<br />
         Dúvidas: <a href="https://instagram.com/ingressometodotes" target="_blank">@ingressometodotes</a>
+        · WhatsApp: (47) 98864-3952
       </p>
       <p style="margin-top:12px;">
-        Este site não armazena dados pessoais. Pagamentos processados com segurança pela plataforma TON.
+        Este site não armazena dados pessoais. Pagamentos processados com segurança.
       </p>
     </div>
   </footer>
 
   <!-- BARRA FLUTUANTE MOBILE -->
   <div class="barra-mobile">
-    <a href="https://payment-link-v3.ton.com.br/pl_MVp7v9mk4GE81evHJF0L86yaWRzOe1bq"
-       class="btn-cartao" target="_blank" rel="noopener">GARANTIR INGRESSO — 10x R$ 109</a>
+    <a href="https://wa.me/5547988643952?text=Ol%C3%A1!+Quero+garantir+meu+ingresso+do+M%C3%A9todo+TES+por+R%24+500+no+PIX."
+       class="mob-pix" target="_blank" rel="noopener">PIX R$ 500</a>
+    <a href="https://payment-link-v3.ton.com.br/pl_KG7Pg9ydq5JelBslwsL8p2rk0nlLzZjB"
+       class="mob-cartao" target="_blank" rel="noopener">5x R$ 100 Cartão</a>
   </div>
 
   <script>
